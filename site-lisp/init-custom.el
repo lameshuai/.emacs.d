@@ -11,7 +11,10 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (mouse-avoidance-mode 'animate)
 
+(setq default-directory "~/")
+(setq require-final-newline t)
 (setq frame-title-format "%f")
+(setq inhibit-startup-message t)
 (setq ring-bell-function 'ignore)
 (setq enable-recursive-minibuffers t)
 (setq backup-directory-alist (quote (("." . "~/.backups"))))
@@ -27,5 +30,5 @@
 	     (c-set-style "k&r")
 	     (c-toggle-auto-state)))
 
-
+(provide 'init-custom)
 
