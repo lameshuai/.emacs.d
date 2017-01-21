@@ -27,5 +27,5 @@
 	     (c-set-style "k&r")
 	     (c-toggle-auto-state)))
 
-
+(provide 'init-custom)
 
