@@ -1,7 +1,6 @@
 ;;; init-custom.el
 
 ;; code enviroment
-
 (set-terminal-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)
 (set-keyboard-coding-system 'utf-8)
@@ -14,7 +13,7 @@
 (setq default-process-coding-system '(utf-8 . utf-8))
 
 
-;; bootup
+;; startup
 (ido-mode t)
 (tool-bar-mode -1)
 (show-paren-mode t)
@@ -36,6 +35,8 @@
 
 ;; font style
 ;; (set-frame-font "-outline-Consolas-bold-italic-normal-mono-*-*-*-*-c-*-iso10646-1") ;; windows
+
+(setq x-select-enable-clipboard t)	;; share liunx clipboard
 
 
 ;; c style
