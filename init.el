@@ -14,6 +14,8 @@
 (require 'init-powerline)
 (require 'init-smex)
 (require 'init-smartparens)
-
+;; (require 'init-slime)
+;; (require 'init-clisp)
+;; 
 
 (provide 'init)
