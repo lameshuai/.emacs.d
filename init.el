@@ -14,7 +14,7 @@
 (require 'init-powerline)
 (require 'init-smex)
 (require 'init-smartparens)
+(require 'init-counsel-gtags)
 ;; (require 'init-clisp)
-;; (require 'init-counsel-gtags)
 
 (provide 'init)
