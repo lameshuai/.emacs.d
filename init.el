@@ -15,6 +15,6 @@
 (require 'init-smex)
 (require 'init-smartparens)
 ;; (require 'init-clisp)
-
+;; (require 'init-counsel-gtags)
 
 (provide 'init)
