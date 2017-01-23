@@ -1,0 +1,11 @@
+/elpa
+/auto-save-list
+/slime
+/ido.last
+/smex-items
+
+# Windows
+/sbcl
+/init.el~
+
+
