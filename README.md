@@ -1,15 +1,51 @@
-# Enviroment Required:
-  Emacs Version 24 or higher
-# Install
-  OS X or Linux:
-       git clone http://github.com/Liunxs/.emacs.d ~/.emacs.d
+## A emacs config
+This is my emacs configuration tree, continually used and tweaked since 2016.
+And the config now supports for the following:
 
-  Windows:
-	First: Go to the dirctory "c:/Users/(your host name)/AppData/Roaming/" find a dirctory named .emacs.d;
-	Secondly: set a new file named init.el with this two sentenses:
-		  (setenv "HOME" "wherever you like(the location of you cloned .emacs.d)")
-		  (load "~/.emacs.d/init.el")
-		  Finally: go the the location and git clone http://github.com/Liunxs/.emacs.d
+* C/C++
+* Common Lisp
+
+## Requirements
+
+*1.Emacs 24 or higher;
+*2.Clang (for C/C++)
+
+## Installation
+
+To install, clone this repo to `~/.emacs.d`, i.e. ensure that the
+`init.el` contained in this repo ends up at `~/.emacs.d/init.el`:
+
+```
+git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+```
+
+Upon starting up Emacs for the first time, further third-party
+packages will be automatically downloaded and installed. If you
+encounter any errors at that stage, try restarting Emacs, and possibly
+running `M-x package-refresh-contents` before doing so.
+
+
+
+## Updates
+
+Update the config with `git pull`. You'll probably also want/need to update
+the third-party packages regularly too:
+
+<kbd>M-x package-list-packages</kbd>, then <kbd>U</kbd> followed by <kbd>x</kbd>.
+
+You should usually restart Emacs after pulling changes or updating
+packages so that they can take effect. Emacs should usually restore
+your working buffers when you restart due to this configuration's use
+of the `desktop` and `session` packages.
+
+
+## Support/issues
+
+If you hit any problems, please first ensure that you are using the latest version
+of this code, and that you have updated your packages to the most recent available
+versions (see "Updates" above). If you still experience problems,please go ahead and [file an issue](https://github.com/Liunxs/.emacs.d/issues).
+
+-Douglas Hall
 
 
 
