@@ -7,8 +7,8 @@ And the config now supports for the following:
 
 ## Requirements
 
-*1.Emacs 24 or higher;
-*2.Clang (for C/C++)
+* 1.Emacs 24 or higher
+* 2.Clang (for C/C++)
 
 ## Installation
 
