@@ -1,14 +1,8 @@
 ;;; init-elpa.el
 
+(require 'package)
+
 ;; Standard package repositories 
-
-(when (< emacs-major-version 24)
-  ;; Mainly for ruby-mode
-  (add-to-list 'package-archive '("marmalade" . "http://marmalade-repo.org/packages/")))
-
-;; We include the org repository for completeness, but don't normally
-;; use it.
-(add-to-list 'package-archive '("org" . "http://orgmode.org/elpa/"))
 
 (when (< emacs-major-version 24)
   (add-to-list 'package-archive '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -18,13 +12,7 @@
                                                "http://melpa.org/packages/"
                                              "https://melpa.org/packages/")))
 
-
 
-;; (require 'package)
-;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-;; (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
-
-
 ;;; On-demand installation of packages
 
 (defun require-package (package &optional min-version no-refresh)
@@ -52,7 +40,6 @@ locate PACKAGE."
      (message "Couldn't install optional package `%s': %S" package err)
      nil)))
 
-
 
 (package-initialize)
 (provide 'init-elpa)
