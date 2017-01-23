@@ -5,10 +5,10 @@
 ;; Standard package repositories 
 
 (when (< emacs-major-version 24)
-  (add-to-list 'package-archive '("gnu" . "http://elpa.gnu.org/packages/")))
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
 ;;; Also use Melpa for most packages
-(add-to-list 'package-archive '("melpa" . ,(if (< emacs-major-version 24)
+(add-to-list 'package-archives '("melpa" . ,(if (< emacs-major-version 24)
                                                "http://melpa.org/packages/"
                                              "https://melpa.org/packages/")))
 

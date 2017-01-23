@@ -3,10 +3,6 @@
 ;;; This file bootstraps the configure-info-directory, which is devided into
 ;;; a number of other files.
 
-(let ((minver "23.3"))
-  (when (version<= emacs-version minver)
-    (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
-
 
 ;; plugins location
 (add-to-list
