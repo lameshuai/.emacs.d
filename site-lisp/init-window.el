@@ -2,6 +2,7 @@
 
 (require-package 'window-numbering)
 (require 'window-numbering)
+(window-numbering-mode t)
 
 ;; Enable window-numbering-mode and use M-1 through M-0 to navigate
 (setq window-numbering-assing-func
