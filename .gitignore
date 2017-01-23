@@ -3,6 +3,7 @@
 /slime
 /ido.last
 /smex-items
+/.smex-items
 
 # Windows
 /sbcl

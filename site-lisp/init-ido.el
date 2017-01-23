@@ -7,5 +7,13 @@
 (setq-default org-completing-use-ido t)
 (setq ido-auto-merge-work-directories-length -1)
 
+(when (maybe-require-package 'ido-ubiquitous)
+  (ido-ubiquitous-mode t))
+
+(require-package 'idomenu)
+
+(setq ido-default-buffer-method 'selected-window)
+
+(add-hook 'ido-setup-hook (lambda () (define-key ido-completion-map [up] 'previous-history-element)))
 
 (provide 'init-ido)
