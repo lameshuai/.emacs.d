@@ -21,6 +21,6 @@
 (require 'init-theme)
 (require 'init-powerline)
 (require 'init-window)
-;; (require 'init-clisp)
+(require 'init-clisp)
 
 (provide 'init)
