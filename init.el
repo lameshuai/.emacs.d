@@ -15,7 +15,7 @@
 (require 'init-smex)
 (require 'init-smartparens)
 (require 'init-counsel-gtags)
-(require 'init-window-numbering)
+(require 'init-window)
 ;; (require 'init-clisp)
 
 (provide 'init)
