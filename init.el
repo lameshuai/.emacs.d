@@ -16,6 +16,6 @@
 (require 'init-smartparens)
 (require 'init-counsel-gtags)
 (require 'init-window)
-;; (require 'init-clisp)
+(require 'init-clisp)
 
 (provide 'init)

@@ -2,9 +2,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/slime/")
 
-;; ;; debian/ubuntu version
-;; (setq inferior-lisp-program "/usr/bin/sbcl")
-;; (setq slime-contribs '(slime-fancy))
+;; debian/ubuntu version
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
 
 ;; ;; windows version
 ;; (setq inferior-lisp-program "~/.emacs.d/sbcl/sbcl.exe")
