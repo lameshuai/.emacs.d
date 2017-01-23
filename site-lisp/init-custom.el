@@ -1,6 +1,6 @@
 ;;; init-custom.el
 
-
+
 ;;; code enviroment
 
 (set-terminal-coding-system 'utf-8)
@@ -14,10 +14,11 @@
 (modify-coding-system-alist 'process "*" 'utf-8)
 (setq default-process-coding-system '(utf-8 . utf-8))
 
-
+
 ;;; startup
 
 (tool-bar-mode -1)
+(menu-bar-mode -1)
 (show-paren-mode t)
 (scroll-bar-mode -1)
 (global-linum-mode t)
@@ -35,7 +36,7 @@
 (setq enable-recursive-minibuffers t)
 (setq backup-directory-alist (quote (("." . "~/.backups"))))
 
-
+
 ;;; font style
 ;; (set-frame-font "-outline-Consolas-bold-italic-normal-mono-*-*-*-*-c-*-iso10646-1") ;; windows
 
@@ -44,7 +45,7 @@
 (setq-default initial-scratch-message
               (concat ";; Happy hacking, " user-login-name " - Emacs ♥ you!\n\n"))
 
-
+
 ;;; c style
 
 (add-hook 'c-mode-hook
@@ -52,7 +53,7 @@
 	     (c-set-style "k&r")
 	     (c-toggle-auto-state)))
 
-
+
 
 (provide 'init-custom)
 
