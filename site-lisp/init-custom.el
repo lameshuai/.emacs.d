@@ -17,7 +17,6 @@
 
 ;;; startup
 
-(ido-mode t)
 (tool-bar-mode -1)
 (show-paren-mode t)
 (scroll-bar-mode -1)
