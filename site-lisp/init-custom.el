@@ -54,6 +54,5 @@
 	     (c-toggle-auto-state)))
 
 
-
 (provide 'init-custom)
 
