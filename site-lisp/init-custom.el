@@ -42,9 +42,6 @@
 
 (setq x-select-enable-clipboard t)	;; share liunx clipboard
 
-(setq-default initial-scratch-message
-              (concat ";; Happy hacking, " user-login-name " - Emacs ♥ you!\n\n"))
-
 
 ;;; c style
 
