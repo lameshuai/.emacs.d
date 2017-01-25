@@ -1,7 +1,7 @@
 ;;; init-matlab.el
 
 (require-package 'matlab-mode)
-(require 'matlab-mode-autoloads)
-
+(require 'matlab)
+(require 'matlab-load)
 
 (provide 'init-matlab)
