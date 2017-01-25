@@ -17,6 +17,8 @@
 (require 'init-ido)
 (require 'init-smex)
 (require 'init-smartparens)
+(require 'init-python)
+(require 'init-matlab)
 (require 'init-counsel-gtags)
 (require 'init-theme)
 (require 'init-powerline)
