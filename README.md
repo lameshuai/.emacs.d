@@ -1,9 +1,15 @@
-## A emacs config
+## My emacs Config
 This is my emacs configuration tree, continually used and tweaked since 2016.
-And the config now supports for the following:
+But it doesn't work well in Windows(some features doesn't work), cause I don't likes Windows.And the config now supports for the following:
 
 * C/C++
-* Common Lisp
+* Python
+* Org
+* Matlab
+* PHP
+* html
+* css
+* sql
 
 ## Requirements
 
