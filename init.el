@@ -11,6 +11,7 @@
 
 ;; pluigns
 (require 'init-utils)
+(require 'init-site-lisp)
 (require 'init-elpa)
 (require 'init-custom)
 (require 'init-company)
