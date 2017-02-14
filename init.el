@@ -45,6 +45,7 @@
 
 (require-package 'diminish)
 
+
 (require 'init-frame-hooks)
 (require 'init-theme)
 (require 'init-gui-frames)
@@ -63,10 +64,15 @@
 ;; Load configs for specific modes
 ;;----------------------------------------------------------------------------
 
+(require 'init-org)
+(require 'init-counsel-gtags)
+(require 'init-python)
+(require 'init-matlab)
+(require 'init-sql)
+;; (require 'init-php)
+;; (requrie 'init-html)
+;; (require 'init-css)
 
-;; (require 'init-python)
-;; (require 'init-matlab)
-;; (require 'init-counsel-gtags)
 ;; (require 'init-clisp)
 
 

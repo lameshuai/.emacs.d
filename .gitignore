@@ -7,6 +7,9 @@
 /smex-items
 /.smex-items
 /recentf
+/org-clock-save.el
+/ditaa*.jar
+
 
 # Windows
 /sbcl
