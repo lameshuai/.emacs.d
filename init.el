@@ -45,15 +45,17 @@
 
 (require-package 'diminish)
 
+(require 'init-frame-hooks)
+(require 'init-theme)
+(require 'init-gui-frames)
 
-(require 'init-custom)
 (require 'init-company)
 (require 'init-ido)
 (require 'init-smex)
 (require 'init-smartparens)
 (require 'init-window)
+
 (require 'init-editing-utils)
-(require 'init-theme)
 (require 'init-powerline)
 (require 'init-fonts)
 
