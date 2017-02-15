@@ -1,6 +1,6 @@
 ## My emacs Config
 This is my emacs configuration tree, continually used and tweaked since 2016.
-But it doesn't work well in Windows(some features doesn't work), cause I don't likes Windows.And the config now supports for the following:
+But it doesn't work well in Windows(some features don't work), cause I don't likes Windows.And the config now supports for the following:
 
 * C/C++
 * Python
@@ -51,7 +51,7 @@ If you hit any problems, please first ensure that you are using the latest versi
 of this code, and that you have updated your packages to the most recent available
 versions (see "Updates" above). If you still experience problems,please go ahead and [file an issue](https://github.com/Liunxs/.emacs.d/issues).
 
--Douglas Hall
+--Douglas Hall
 
 
 
