@@ -82,5 +82,6 @@
 
 (require-package 'disable-mouse)
 
+(fset 'yes-or-no-p 'y-or-n-p)
 
 (provide 'init-gui-frames)
