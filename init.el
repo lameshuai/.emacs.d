@@ -66,6 +66,7 @@
 ;; Load configs for specific modes
 ;;----------------------------------------------------------------------------
 
+(require 'init-yasnippet)
 (require 'init-org)
 (require 'init-counsel-gtags)
 (require 'init-python)
