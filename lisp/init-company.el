@@ -6,7 +6,6 @@
 ;; Stop completion-at-point from popping up completion buffers so eagerly
 (setq completion-cycle-threshold 5)
 
-
 (when (maybe-require-package 'company)
   (add-hook 'after-init-hook 'global-company-mode)
   (after-load 'company
@@ -15,7 +14,8 @@
     (define-key company-active-map (kbd "M-/") 'company-select-next)
     (setq-default company-backends '((company-capf company-dabbrev-code) company-dabbrev)
                   company-dabbrev-other-buffers 'all))
-  (global-set-key (kbd "M-C-/") 'company-complete) 
+  (global-set-key (kbd "M-C-/") 'company-complete)
+
   (when (maybe-require-package 'company-quickhelp)
     (add-hook 'after-init-hook 'company-quickhelp-mode))
 
@@ -23,8 +23,6 @@
     "Add BACKEND to a buffer-local version of `company-backends'."
     (set (make-local-variable 'company-backends)
          (append (list backend) company-backends))))
-
-
 
 
 ;; Suspend page-break-lines-mode while company menu is active
