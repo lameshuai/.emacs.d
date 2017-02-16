@@ -68,13 +68,14 @@
 (require 'init-org)
 (require 'init-counsel-gtags)
 (require 'init-python)
+(require 'init-lisp)
 (require 'init-slime)
 (require 'init-clisp)
 (require 'init-matlab)
 (require 'init-sql)
-;; (require 'init-php)
-;; (requrie 'init-html)
-;; (require 'init-css)
+(require 'init-php)
+(require 'init-html)
+(require 'init-css)
 
 
 
