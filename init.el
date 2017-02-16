@@ -55,6 +55,7 @@
 (require 'init-smartparens)
 (require 'init-window)
 (require 'init-dired)
+(require 'init-ibuffer)
 
 (require 'init-editing-utils)
 (require 'init-paredit)
