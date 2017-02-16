@@ -54,8 +54,10 @@
 (require 'init-smex)
 (require 'init-smartparens)
 (require 'init-window)
+(require 'init-dired)
 
 (require 'init-editing-utils)
+(require 'init-paredit)
 (require 'init-powerline)
 (require 'init-fonts)
 
@@ -66,21 +68,23 @@
 (require 'init-org)
 (require 'init-counsel-gtags)
 (require 'init-python)
+;; (require 'init-slime)
+;; (require 'init-clisp)
 (require 'init-matlab)
 (require 'init-sql)
 ;; (require 'init-php)
 ;; (requrie 'init-html)
 ;; (require 'init-css)
 
-;; (require 'init-clisp)
+
 
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
 ;;----------------------------------------------------------------------------
-;; (require 'server)
-;; (unless (server-running-p)
-;;   (server-start))
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 
 ;;----------------------------------------------------------------------------
