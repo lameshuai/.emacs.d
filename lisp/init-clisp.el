@@ -1,12 +1,9 @@
-;;; init-clisp.el
-
-(if (if 'gnu/linuxs' t nil)
-    (add-to-list 'load-path "~/.emacs.d/clisp/slime/")
-  (require-package 'slime))
-
-(require 'slime-autoloads)
-(setq slime-contribs '(slime-fancy))
-
+;; See http://bc.tech.coop/blog/070927.html
+(add-auto-mode 'lisp-mode "\\.cl\\'")
+(add-hook 'lisp-mode-hook (lambda ()
+                            (unless (featurep 'slime)
+                              (require 'slime)
+                              (normal-mode))))
 
 (after-load 'slime
   (when (executable-find "sbcl")
