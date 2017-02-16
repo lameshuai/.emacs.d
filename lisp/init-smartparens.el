@@ -3,6 +3,7 @@
 (require-package 'smartparens)
 (require 'smartparens)
 (require 'smartparens-config)
-(smartparens-global-strict-mode +1)
+(add-hook 'after-init-hook 'smartparens-global-strict-mode)
+
 
 (provide 'init-smartparens)
