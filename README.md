@@ -1,5 +1,5 @@
 # My Emacs Configure
-### This is my emacs configuration tree, continually used and tweaked since 2016.But it doesn't work well in Winfdows(some features are not available), cause I don't likes Windows.And the config now supports for the following:
+#### This is my emacs configuration tree, continually used and tweaked since 2016.But it doesn't work well in Winfdows(some features are not available), cause I don't likes Windows.And the config now supports for the following:
 
 * C/C++ (auto-complete with c-headers, not available in Windows)
 * Python
