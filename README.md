@@ -1,19 +1,15 @@
-## My emacs Config
-This is my emacs configuration tree, continually used and tweaked since 2016.
-But it doesn't work well in Windows(some features don't work), cause I don't likes Windows.And the config now supports for the following:
+## My Emacs Configure
+# This is my emacs configuration tree, continually used and tweaked since 2016.But it doesn't work well in Winfdows(some features are not available), cause I don't likes Windows.And the config now supports for the following:
 
-* C/C++
+* C/C++ (auto-complete with c-headers, not available in Windows)
 * Python
 * Org
 * Matlab
-* PHP
-* html
-* css
-* sql
+
 
 ## Requirements
 
-* 1.Emacs 24 or higher
+* 1.Emacs 24 or higher (Windows requires Emacs version 25 only)
 * 2.Clang (for C/C++)
 
 ## Installation
