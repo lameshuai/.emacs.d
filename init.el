@@ -43,19 +43,23 @@
 ;;----------------------------------------------------------------------------
 
 (require-package 'diminish)
-
+(require-package 'wgrep)
 
 (require 'init-frame-hooks)
 (require 'init-theme)
 (require 'init-gui-frames)
-
-(require 'init-company)
-(require 'init-ido)
-(require 'init-smex)
-(require 'init-smartparens)
-(require 'init-window)
 (require 'init-dired)
+(require 'init-grep)
 (require 'init-ibuffer)
+
+
+(require 'init-smex)
+;; If you prefer ivy to ido, change the comments below.
+(require 'init-ivy)
+;; (require 'init-ido)
+(require 'init-smartparens)
+(require 'init-company)
+(require 'init-window)
 
 (require 'init-editing-utils)
 (require 'init-paredit)
@@ -66,9 +70,9 @@
 ;; Load configs for specific modes
 ;;----------------------------------------------------------------------------
 
-(require 'init-yasnippet)
+;; (require 'init-yasnippet)
 (require 'init-org)
-(require 'init-counsel-gtags)
+;; (require 'init-counsel-gtags)
 (require 'init-python)
 (require 'init-lisp)
 (require 'init-slime)
