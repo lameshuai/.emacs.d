@@ -9,10 +9,8 @@
 /recentf
 /org-clock-save.el
 /ditaa*.jar
-
-
-# Windows
-/sbcl
+/ido.last~
 /init.el~
+
 
 

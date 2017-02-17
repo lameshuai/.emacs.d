@@ -5,7 +5,7 @@
 (color-theme-initialize)
 
 ;; If you don't customize it, this is the theme you get
-(color-theme-emacs-nw)
+(color-theme-classic)
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -45,6 +45,6 @@
 (defun matrix ()
   "Activate a matrix color theme."
   (interactive)
-  (color-theme-sanityinc-solarized-light))
+  (color-theme-matrix))
 
 (provide 'init-theme)
