@@ -13,6 +13,7 @@
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
+(defconst *is-linux* (eq system-type 'gnu/linux))
 
 ;;----------------------------------------------------------------------------
 ;; Temporarily reduce garbage collection during startup
@@ -36,12 +37,11 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-preload-local.el"
 ;;----------------------------------------------------------------------------
-;; (require 'init-preload-local nil t)
+(require 'init-preload-local nil t)
 
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features 
 ;;----------------------------------------------------------------------------
-
 (require-package 'diminish)
 (require-package 'wgrep)
 
@@ -55,22 +55,23 @@
 
 (require 'init-smex)
 ;; If you prefer ivy to ido, change the comments below.
-(require 'init-ivy)
-;; (require 'init-ido)
+;; (require 'init-ivy)
+(require 'init-ido)
 (require 'init-smartparens)
 (require 'init-company)
 (require 'init-window)
 
+
 (require 'init-editing-utils)
-(require 'init-paredit)
 (require 'init-powerline)
 (require 'init-fonts)
+(require 'init-mmm)
 
-;;----------------------------------------------------------------------------
+
+
 ;; Load configs for specific modes
-;;----------------------------------------------------------------------------
-
 ;; (require 'init-yasnippet)
+(require 'init-paredit)
 (require 'init-org)
 ;; (require 'init-counsel-gtags)
 (require 'init-python)
@@ -78,10 +79,6 @@
 (require 'init-slime)
 (require 'init-clisp)
 (require 'init-matlab)
-(require 'init-sql)
-(require 'init-php)
-(require 'init-html)
-(require 'init-css)
 
 ;;; c/c++ ide
 (require-package 'company-c-headers)
@@ -108,7 +105,7 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
 ;;----------------------------------------------------------------------------
-;; (require 'init-local nil t)
+(require 'init-local nil t)
 
 
 

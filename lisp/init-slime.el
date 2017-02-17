@@ -5,6 +5,11 @@
 (mapc #'delete-file
       (file-expand-wildcards (concat user-emacs-directory "elpa/slime-2*/contrib/*.elc")))
 
+;; fix with debian can't connect slime server
+(when *is-linux*
+  (add-to-list 'load-path "~/.emacs.d/clisp/slime/")
+  (require 'slime))
+
 (require-package 'hippie-expand-slime)
 (maybe-require-package 'slime-company)
 
