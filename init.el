@@ -28,7 +28,6 @@
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-;; (require 'init-compat)
 (require 'init-utils)    ;;Must come before elpa, as it may provide package.el
 ;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
@@ -65,15 +64,11 @@
 (require 'init-editing-utils)
 (require 'init-powerline)
 (require 'init-fonts)
-(require 'init-mmm)
-
-
 
 ;; Load configs for specific modes
 ;; (require 'init-yasnippet)
 (require 'init-paredit)
-(require 'init-org)
-;; (require 'init-counsel-gtags)
+;; (require 'init-org)
 (require 'init-python)
 (require 'init-lisp)
 (require 'init-slime)
